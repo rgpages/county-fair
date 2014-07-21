@@ -5,6 +5,14 @@ body{
 	color: white;
 }
 
+a:link { color: #64c9ff; text-decoration: none; }
+
+a:visited { color: #00517e; text-decoration: none; }
+
+a:hover { color: #ca4700; text-decoration: underline; }
+
+a:active { color: #ca4700; text-decoration: underline; }
+
 #fun_wrap{
 	width: 100%;
 	max-width: 1400px;
@@ -17,6 +25,30 @@ body{
 #fun_innerwrap{
 	width: 90%;
 	margin:0 auto;
+}
+
+.fun_bydate{
+	margin-top: 2em;
+	width: 100%;
+	padding-bottom:2em;
+}
+
+.fun_byline{
+	width: 50%;
+	float: left;
+	font-weight: 900;
+	font-family: Cambria, Georgia, serif!important;
+	display: inline;
+}
+
+.fun_date{
+	width: 50%;
+	float: left;
+	font-weight: 100;
+	color: #ccc;
+	font-family: Cambria, Georgia, serif!important;
+	text-align: right;
+	display: inline;
 }
 
 .fun_headline{
@@ -114,6 +146,19 @@ footer{
 		padding: 0;
 		width: 90%;
 		background: rgba(0,0,0,0);
+	}
+	
+	.fun_bydate{
+		margin-left: 10%;
+	}
+	
+	.fun_byline{
+		width: 100%;
+	}
+
+	.fun_date{
+		width: 100%;
+		text-align: left;
 	}
 }
 
