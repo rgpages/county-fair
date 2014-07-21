@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	background: black;
 	font-family: Cambria, Georgia, serif;
+	color: white;
 }
 
 #fun_wrap{
@@ -33,6 +34,7 @@ body{
 }
 
 .fun_top{
+	position: relative;
 	width: 100%;
 }
 
@@ -45,31 +47,38 @@ body{
 	padding: 5%;
 	text-align: center;
 	font-size: 4em;
-	background: rgba(255,255,255,.4);
+	background: rgba(0, 0, 0, 0.4);
 	font-family: "MillerHeadline Bold";
 }
 
 .fun_headline{
 	position: absolute;
-	bottom: 1.5em;
-	left: .5em;
-	color: white;
+	bottom: 0;
+	padding: .5em;
 	font-weight: bold;
 	font-size: 2.5em;
+	width: 100%;
+	background: rgba(0,0,0,.2);
 }
 
 .fun_headline span{
 	font-size: 1.5em;
 }
 
+.fun_instruct{
+	width: 100%;
+	font-style: italic;
+	font-size: 1.2em;
+	margin: 1em;
+}
+
 .fun_caption{
 	margin: 0 auto;
 	width: 90%;
-	color: white;
 	padding-top: .5em;
 	text-align: left;
 	font-size: 1em;
-	background: rgba(0,0,0,.4);
+	background: rgba(0,0,0,.2);
 	font-weight:100;
 }
 
@@ -78,13 +87,15 @@ hr{ margin: 5em; }
 footer{
 	font-style: italic;
 	text-align: center;
-	color: white;
 	margin-bottom: 5em;
 }
 
 @media (max-width:640px){
 	.fun_headline{
 		font-size: 1.5em;
+		position:relative;
+		bottom: 0;
+		left: .2em;
 	}
 	
 	.fun_button img{
