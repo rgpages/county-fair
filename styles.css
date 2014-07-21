@@ -7,7 +7,7 @@ body{
 
 #fun_wrap{
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 2em auto;
 	background:#222;
 	border: solid 1px #444;
@@ -17,6 +17,30 @@ body{
 #fun_innerwrap{
 	width: 90%;
 	margin:0 auto;
+}
+
+.fun_headline{
+	font-family:"MillerHeadline Bold";
+	font-weight: bold;
+	font-size: 3.5em;
+	line-height: 1.15em;
+	position: absolute;
+	bottom: 0;
+	padding: 1%;
+	width: 98%;
+	background: rgba(0,0,0,.5);
+}
+
+.fun_headline span{
+	font-size: 1.5em;
+}
+
+.fun_instruct{
+	width: 90%;
+	font-style: italic;
+	font-size: 1.2em;
+	color: #ccc;
+	margin:2em;
 }
 
 .fun_group{
@@ -46,41 +70,15 @@ body{
 	width: 100%;
 }
 
-.fun_headline{
-	font-family:"MillerHeadline Bold";
-	font-weight: bold;
-	font-size: 3.5em;
-	line-height: 1.15em;
-	position: absolute;
-	bottom: 0;
-	padding: 1%;
-	width: 98%;
-	background: rgba(0,0,0,.5);
-}
-
-.fun_headline span{
-	font-size: 1.5em;
-}
-
-.fun_instruct{
-	width: 90%;
-	font-style: italic;
-	font-size: 1.2em;
-	color: #ccc;
-	margin:2em;
-}
-
 .fun_caption{
 	margin: 0 auto;
-	width: 90%;
-	padding-top: .5em;
 	text-align: left;
 	font-size: 1em;
 	font-weight:100;
 	position: absolute;
-	bottom: 2em;
-	padding: 1%;
-	width: 98%;
+	bottom: 2.2em;
+	padding: 1% 5% 1% 5%;
+	width: 90%;
 	background: rgba(0,0,0,.5);
 }
 
@@ -93,6 +91,11 @@ footer{
 }
 
 @media (max-width:640px){
+	
+	#fun_innerwrap{
+		width: 100%;
+	}
+	
 	.fun_headline{
 		font-size: 2em;
 		position:relative;
@@ -103,6 +106,14 @@ footer{
 	.fun_button img{
 		width: 75px;
 		height: 75px;
+	}
+	
+	.fun_caption{
+		position: relative;
+		bottom: 0;
+		padding: 0;
+		width: 90%;
+		background: rgba(0,0,0,0);
 	}
 }
 
