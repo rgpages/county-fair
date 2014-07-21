@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<script>
+		
+		function playAudio(audioID,buttonID){
+			var clip = $("#" + audioID);
+			var button = $("#" + buttonID);
+			var playButton = "media/play+.png";
+			var pauseButton = "media/pause+.png";
+			if (clip.prop('paused')){
+				clip[0].play();
+				button.prop('src', pauseButton);
+			}
+			else{
+				clip.get(0).pause();
+				button.prop('src', playButton);
+			}
+		}
+	
+	</script>
+	
+	<link rel="stylesheet" href="http://static.registerguard.com/v5/zeppelin/prod/0.1.0/20140716/1/styles/zeppelin.min.css">
+	<link rel="stylesheet" href="styles.css">
+	
+</head>
+<body>
+	
+	<!--		HEAD		-->
+	<header id="zeppelin" role="banner">
+		<h6><a href="http://registerguard.com">The Register-Guard</a></h6>
+		<p>Lane County Fair</p>
+	</header>
+	<!--		/HEAD		-->
+	
+	<div id="fun_top">
+		<img src="top.jpg" width="100%">
+	</div>
+	
+	<div id="fun_wrap">
+		
+		<div class="fun_group">
+			<img src="media/00.jpg" width="100%">
+			<div class="fun_headline">
+				The sights and sounds of the<br><span>Lane County Fair</span>
+			</div>
+			<audio id="audio1">
+				<source src="media/audio/001.ogg" type="audio/ogg" />
+				<source src="media/audio/001.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+			<div class="fun_button">
+				<img src="media/play+.png" id="play1" class="play" onclick="playAudio('audio1','play1');">
+			</div>		
+			<div class="fun_caption">
+				Scroll down and click play on the top-right corner to listen to the natural ambiance of the Fair.
+			</div>
+		</div>
+		
+		<div class="fun_group">
+			<img src="media/01.jpg" width="100%">
+			<audio id="audio1">
+				<source src="media/audio/001.ogg" type="audio/ogg" />
+				<source src="media/audio/001.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+			<div class="fun_button">
+				<img src="media/play+.png" id="play1" class="play" onclick="playAudio('audio1','play1');">
+			</div>
+			<div class="fun_caption">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. (Rob Denton/The Register-Guard)
+			</div>
+		</div>
+
+		
+		<div class="fun_group">
+			<img src="media/02.jpg" width="100%">
+			<audio id="audio2">
+				<source src="media/audio/001.ogg" type="audio/ogg" />
+				<source src="media/audio/001.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+			<div class="fun_button">
+				<img src="media/play+.png" id="play2" class="play" onclick="playAudio('audio2','play2');">
+			</div>		
+			<div class="fun_caption">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. (Rob Denton/The Register-Guard)
+			</div>
+		</div>
+		
+		<div class="fun_group">
+			<img src="media/03.jpg" width="100%">
+			<audio id="audio3">
+				<source src="media/audio/001.ogg" type="audio/ogg" />
+				<source src="media/audio/001.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+			<div class="fun_button">
+				<img src="media/play+.png" id="play3" class="play" onclick="playAudio('audio3','play3');">
+			</div>		
+			<div class="fun_caption">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. (Rob Denton/The Register-Guard)
+			</div>
+		</div>
+
+		<hr>
+		
+		<footer>
+			The Register-Guard &copy; 2014
+		</footer>
+		
+	</div> <!-- /#fun_wrap -->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://static.registerguard.com/v5/zeppelin/prod/0.1.0/20140716/1/scripts/zeppelin.min.js"></script>
+	
+	<script>
+		
+		$(document).ready(function() {});
+		
+	</script>
+	
+</body>
+</html>
