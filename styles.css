@@ -1,8 +1,15 @@
-body{
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body{
 	margin: 0;
 	background: black;
 	font-family: Cambria, Georgia, serif;
 	color: white;
+	overflow-x: hidden;
 }
 
 a:link { color: #64c9ff; text-decoration: none; }
@@ -14,7 +21,6 @@ a:hover { color: #ca4700; text-decoration: underline; }
 a:active { color: #ca4700; text-decoration: underline; }
 
 #fun_wrap{
-	width: 100%;
 	max-width: 1005px;
 	margin: 2em auto;
 	background: #222;
