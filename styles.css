@@ -48,7 +48,6 @@ a:active { color: #ca4700; text-decoration: underline; }
 	margin: 0;
 	padding: 1%;
 	width: 98%;
-	xbackground: rgba(0,0,0,.5);
 }
 
 .fun_headline{
@@ -102,6 +101,12 @@ a:active { color: #ca4700; text-decoration: underline; }
 	border-bottom: solid 1px #444;
 	padding-bottom: 2em;
 	margin-bottom: 2em;
+}
+
+.fun_group img{
+	background-image: url(media/images/spin.gif);
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .fun_button img{
