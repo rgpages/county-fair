@@ -15,9 +15,9 @@ a:active { color: #ca4700; text-decoration: underline; }
 
 #fun_wrap{
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1005px;
 	margin: 2em auto;
-	background:#222;
+	background: #222;
 	border: solid 1px #444;
 	padding-bottom: 2em;
 }
@@ -27,18 +27,50 @@ a:active { color: #ca4700; text-decoration: underline; }
 	margin:0 auto;
 }
 
+.fun_top{
+	position: relative;
+	width: 100%;
+}
+
+.fun_top h1{
+	font-size: 7em;
+	font-family:"MillerHeadline Light";
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 1%;
+	width: 98%;
+	xbackground: rgba(0,0,0,.5);
+}
+
+.fun_headline{
+	font-family:"MillerHeadline Light";
+	font-size: 3.5em;
+	line-height: 1.15em;
+	letter-spacing: .02em;
+	padding: 1%;
+	width: 98%;
+}
+
+.fun_headline span{
+	font-size: 1.7em;
+}
+
 .fun_bydate{
 	margin-top: 2em;
 	width: 100%;
-	padding-bottom:2em;
+	padding-bottom: 2em;
+	border-bottom:1px solid #444;
+	overflow: hidden;
 }
 
 .fun_byline{
 	width: 50%;
 	float: left;
 	font-weight: 900;
-	font-family: Cambria, Georgia, serif!important;
-	display: inline;
+	font-variant: small-caps;
 }
 
 .fun_date{
@@ -46,33 +78,16 @@ a:active { color: #ca4700; text-decoration: underline; }
 	float: left;
 	font-weight: 100;
 	color: #ccc;
-	font-family: Cambria, Georgia, serif!important;
 	text-align: right;
-	display: inline;
-}
 
-.fun_headline{
-	font-family:"MillerHeadline Bold";
-	font-weight: bold;
-	font-size: 3.5em;
-	line-height: 1.15em;
-	position: absolute;
-	bottom: 0;
-	padding: 1%;
-	width: 98%;
-	background: rgba(0,0,0,.5);
-}
-
-.fun_headline span{
-	font-size: 1.5em;
 }
 
 .fun_instruct{
 	width: 90%;
 	font-style: italic;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #ccc;
-	margin:2em;
+	margin: 2em;
 }
 
 .fun_group{
@@ -91,22 +106,23 @@ a:active { color: #ca4700; text-decoration: underline; }
 	right: 0;
 	opacity: .3;
 	margin: 5%;
+	-webkit-transition: opacity .5s;
+	-moz-transition: opacity .5s;
+	-o-transition: opacity .5s;
+	-ms-transition: opacity .5s;
+	transition: opacity .5s;
 }
 
 .fun_button img:hover{
-	opacity: .5;
-}
-
-.fun_top{
-	position: relative;
-	width: 100%;
+	opacity: .5;	
 }
 
 .fun_caption{
 	margin: 0 auto;
 	text-align: left;
 	font-size: 1em;
-	font-weight:100;
+	font-weight: 100;
+	font-style: italic;
 	position: absolute;
 	bottom: 2.2em;
 	padding: 1% 5% 1% 5%;
@@ -119,10 +135,10 @@ hr{ margin: 5em; }
 footer{
 	font-style: italic;
 	text-align: center;
-	margin-bottom: 5em;
+	margin-bottom: 2em;
 }
 
-@media (max-width:640px){
+@media (max-width: 665px){
 	
 	#fun_innerwrap{
 		width: 100%;
@@ -130,7 +146,7 @@ footer{
 	
 	.fun_headline{
 		font-size: 2em;
-		position:relative;
+		position: relative;
 		bottom: 0;
 		background: rgba(0,0,0,0);
 	}
@@ -150,6 +166,7 @@ footer{
 	
 	.fun_bydate{
 		margin-left: 10%;
+		width:80%;
 	}
 	
 	.fun_byline{

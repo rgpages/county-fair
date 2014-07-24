@@ -14,8 +14,8 @@
 		function playAudio(audioID,buttonID){
 			var clip = $("#" + audioID);
 			var button = $("#" + buttonID);
-			var playButton = "media/play+.png";
-			var pauseButton = "media/pause+.png";
+			var playButton = "media/play.svg";
+			var pauseButton = "media/pause.svg";
 			if (clip.prop('paused')){
 				clip[0].play();
 				button.prop('src', pauseButton);
@@ -43,14 +43,16 @@
 	
 	<div class="fun_top">
 		<img src="media/top.jpg" width="100%">
-		<div class="fun_headline">
-			The sights and sounds of the<br><span>Lane County Fair</span>
-		</div>
+		<h1>Fun & Games</h1>
 	</div>
 	
 	<div id="fun_wrap">
 		
 		<div id="fun_innerwrap">
+		
+			<div class="fun_headline">
+				The sights and sounds of the<br><span>Lane County Fair</span>
+			</div>
 		
 			<div class="fun_bydate">
 				<div class="fun_byline">
@@ -76,7 +78,7 @@
 					Your browser does not support the audio element.
 				</audio>
 				<div class="fun_button">
-					<img src="media/play+.png" id="play1" class="play" onclick="playAudio('audio1','play1');">
+					<img src="media/play.svg" id="play1" class="play" onclick="playAudio('audio1','play1');">
 				</div>
 			</div>
 
@@ -89,7 +91,7 @@
 					Your browser does not support the audio element.
 				</audio>
 				<div class="fun_button">
-					<img src="media/play+.png" id="play2" class="play" onclick="playAudio('audio2','play2');">
+					<img src="media/play.svg" id="play2" class="play" onclick="playAudio('audio2','play2');">
 				</div>		
 				<div class="fun_caption">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. (Rob Denton/The Register-Guard)
@@ -104,7 +106,7 @@
 					Your browser does not support the audio element.
 				</audio>
 				<div class="fun_button">
-					<img src="media/play+.png" id="play3" class="play" onclick="playAudio('audio3','play3');">
+					<img src="media/play.svg" id="play3" class="play" onclick="playAudio('audio3','play3');">
 				</div>		
 				<div class="fun_caption">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. (Rob Denton/The Register-Guard)
@@ -119,7 +121,7 @@
 					Your browser does not support the audio element.
 				</audio>
 				<div class="fun_button">
-					<img src="media/play+.png" id="play4" class="play" onclick="playAudio('audio4','play4');">
+					<img src="media/play.svg" id="play4" class="play" onclick="playAudio('audio4','play4');">
 				</div>
 				<div class="fun_caption">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. (Rob Denton/The Register-Guard)
