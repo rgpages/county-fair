@@ -144,6 +144,11 @@ footer{
 		width: 100%;
 	}
 	
+	.fun_top h1{
+		font-size: 4em;
+		line-height: .85em;
+	}
+	
 	.fun_headline{
 		font-size: 2em;
 		position: relative;
@@ -223,3 +228,37 @@ footer{
 		url("http://fonts.registerguard.com/rg/rgweb.svg#RGWeb") format("svg");
 	font-weight:normal;font-style:normal;
 }
+
+/* HOWLER - Stuff for audio from Micky http://github.com/mhulse/av/ */
+.howler {
+	margin: 1em 0;
+	position: relative;
+	overflow: hidden;
+}
+.howler .controller {
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	z-index: 10;
+	opacity: 0; /* JS will make visible. */
+	background-image: url(media/images/controls.png);
+	background-repeat: no-repeat;
+	background-size: 75px 150px;
+	cursor: pointer;
+	cursor: hand;
+}
+.howler .controller.init {
+	top: 20px;
+	opacity: .5;
+	-webkit-transition: opacity 1s, top 1s;
+	        transition: opacity 1s, top 1s;
+}
+.howler .controller.init:hover {
+	opacity: .95;
+	-webkit-transition: opacity .5s;
+	        transition: opacity .5s;
+}
+.howler .controller.init.paused { background-position: left bottom; }
+.howler .controller.init.playing { background-position: left top; }
