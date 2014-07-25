@@ -299,4 +299,6 @@ footer{
 
 .tv { padding-bottom: 75%; } /*4:3 = (3 / 4 = .75) x 100*/
 
+.funky { padding-bottom: 56.25%; } /* 1920 x 1080 = (1080 / 1920 = .5625 * 100) */
+
 /* end of .mm */
