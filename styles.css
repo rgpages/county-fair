@@ -1,3 +1,19 @@
+/* Test for touch */
+
+.touch .funky{
+	display: none;
+}
+
+.funky-img{
+	display: none; /* don't display on default */
+}
+
+.touch .funky-img{
+	display: block;
+}
+
+/* end test for touch */
+
 *, *::before, *::after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
