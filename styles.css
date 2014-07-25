@@ -73,14 +73,14 @@ a:active { color: #ca4700; text-decoration: underline; }
 }
 
 .fun_byline{
-	width: 70%;
+	width: 80%;
 	float: left;
 	font-weight: 900;
 	font-variant: small-caps;
 }
 
 .fun_date{
-	width: 30%;
+	width: 20%;
 	float: left;
 	font-weight: 100;
 	color: #ccc;
