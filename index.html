@@ -161,19 +161,5 @@
 	<!-- ZEPPELIN HEADER -->
 	<script src="http://static.registerguard.com/v5/zeppelin/prod/0.1.0/20140716/1/scripts/zeppelin.min.js"></script>
 	
-	<script>
-		function updateVideo() {
-			var video = $('#fun_video').get(0);
-			var videoLength = video.duration;
-			var scrollPosition = $(document).scrollTop();
-			video.currentTime = (videoLength * scrollPosition) / (($('#fun_video').height() / 4) * 3);
-			console.log(video.currentTime);
-		}
-
-		$(window).scroll(function(e) {
-				updateVideo();
-			});
-	</script>
-	
 </body>
 </html>
