@@ -142,11 +142,10 @@ a:active { color: #ca4700; text-decoration: underline; }
 	background: rgba(0,0,0,.5);
 }
 
-hr{ margin: 5em; }
-
 footer{
 	font-style: italic;
 	text-align: center;
+	margin-top: 5em;
 	margin-bottom: 2em;
 }
 
