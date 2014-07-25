@@ -42,11 +42,17 @@ $(document).ready(function() {
 	
 	// Add sounds to object for easy access later:
 	var sounds = {
-		'one'   : howler_instance_create('one',   ['media/audio/one.mp3',     'media/audio/one.ogg'     ]),
-		'two'   : howler_instance_create('two',   ['media/audio/two.mp3',     'media/audio/two.ogg'     ]),
-		'three' : howler_instance_create('three', ['media/audio/three.mp3', 'media/audio/three.ogg' ]),
-		'four'  : howler_instance_create('four',  ['media/audio/four.mp3',   'media/audio/four.ogg'   ])//,
-		// ... add more here!
+		'one'   : howler_instance_create('one',   ['media/audio/0001.mp3',     'media/audio/0001.ogg'     ]),
+		'two'   : howler_instance_create('two',   ['media/audio/0002.mp3',     'media/audio/0002.ogg'     ]),
+		'three' : howler_instance_create('three', ['media/audio/0003.mp3', 'media/audio/0003.ogg' ]),
+		'four'  : howler_instance_create('four',  ['media/audio/0004.mp3',   'media/audio/0004.ogg'   ]),
+		'five'   : howler_instance_create('five',   ['media/audio/0005.mp3',     'media/audio/0005.ogg'     ]),
+		'six'   : howler_instance_create('six',   ['media/audio/0006.mp3',     'media/audio/0006.ogg'     ]),
+		'seven' : howler_instance_create('seven', ['media/audio/0007.mp3', 'media/audio/0007.ogg' ]),
+		'eight'  : howler_instance_create('eight',  ['media/audio/0008.mp3',   'media/audio/0008.ogg'   ]),
+		'nine' : howler_instance_create('nine', ['media/audio/0009.mp3', 'media/audio/0009.ogg' ]),
+		'ten'  : howler_instance_create('ten',  ['media/audio/0010.mp3',   'media/audio/0010.ogg'   ]),
+		'eleven'  : howler_instance_create('eleven',  ['media/audio/0011.mp3',   'media/audio/0011.ogg'   ])//,
 	};
 	
 	var stack = [];
@@ -85,7 +91,7 @@ $(document).ready(function() {
 						stack.push(current); // Update history.
 						//console.log(stack);
 					})
-					.fade(0, 1, 1000); // Fade works wll here.
+					.fade(0, 1, 10000); // Fade works wll here.
 				
 			}
 			

@@ -14,14 +14,14 @@ html, body{
 
 a:link { color: #64c9ff; text-decoration: none; }
 
-a:visited { color: #00517e; text-decoration: none; }
+a:visited { color: #0072b1; text-decoration: none; }
 
 a:hover { color: #ca4700; text-decoration: underline; }
 
 a:active { color: #ca4700; text-decoration: underline; }
 
 #fun_wrap{
-	max-width: 1005px;
+	max-width: 1200px;
 	margin: 2em auto;
 	background: #222;
 	border: solid 1px #444;
@@ -72,14 +72,14 @@ a:active { color: #ca4700; text-decoration: underline; }
 }
 
 .fun_byline{
-	width: 50%;
+	width: 70%;
 	float: left;
 	font-weight: 900;
 	font-variant: small-caps;
 }
 
 .fun_date{
-	width: 50%;
+	width: 30%;
 	float: left;
 	font-weight: 100;
 	color: #ccc;
@@ -129,6 +129,7 @@ a:active { color: #ca4700; text-decoration: underline; }
 }
 
 .fun_caption{
+	width: 100%;
 	margin: 0 auto;
 	text-align: left;
 	font-size: 1em;
