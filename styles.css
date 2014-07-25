@@ -41,6 +41,7 @@ a:active { color: #ca4700; text-decoration: underline; }
 .fun_top h1{
 	font-size: 7em;
 	font-family:"MillerHeadline Light";
+	font-weight: normal;
 	text-transform: uppercase;
 	position: absolute;
 	bottom: 0;
